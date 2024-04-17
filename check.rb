@@ -15,7 +15,7 @@ if ARGV.include?("-h") || ARGV.include?("--help")
   exit 0
 end
 
-host = ARGV.shift || "api.twilio.com"
+host = ARGV.shift || "api.twilio.com:443"
 
 require 'uri'
 require 'net/http'
